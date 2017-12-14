@@ -13,7 +13,7 @@ def primeGen(n1, n2):
 
 def pointGen(A, B, p):
     x = randint(2, p-1)
-    y = pow(pow(x, 3) + A*x + B, (p+1)/4, p)
+    y = pow(x**3 + A*x + B, (p+1)/4, p)
     return (x, y)
 
 def keyGen(privKey, pointP, A, B, p):
